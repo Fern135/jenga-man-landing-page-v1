@@ -1,0 +1,15 @@
+
+#jenga-man-loading{
+    width: 50%;
+    height: auto;
+}
+
+/* Center an image and make it responsive */
+.centered {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
