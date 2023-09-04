@@ -12,6 +12,24 @@ async function LoadAll(){
     }
 }
 
+async function sleep(ms) {
+    await new Promise((resolve) => setTimeout(resolve, ms));
+  }
+  
+
+function changeGifs(){
+    try{
+        let htmlImage = $("#jenga-man-loading");
+        const gifs = ['./bin/assets/img/jengman-adventure.gif' ]
+        const firstGifTime = 10000;
+        
+        htmlImage.attr('src', gifs[0]); //<=== going through space
+        sleep(firstGifTime); //<============== how long to sleep
+        htmlImage.attr('src', gifs[1]); //<=== landing and turning tree into bookshelf
+    }catch(error){
+        console.error(`error at changing gifs\nerror code: ${error}`);
+    }
+}
 
 function animateSpace(){
     var canvas = document.getElementById('canvas');
