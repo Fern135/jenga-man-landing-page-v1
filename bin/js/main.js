@@ -1,4 +1,4 @@
-import 'gif.js';
+// import 'gif.js';
 
 
 window.onload = LoadAll();
